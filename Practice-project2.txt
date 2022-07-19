@@ -1,0 +1,72 @@
+// Default
+class Main {
+    void mains(){
+        System.out.println("This is a default access modifier");
+    }
+}
+
+// Private
+class Data {
+    private String name;
+}
+
+public class Main {
+    public static void main(String[] main){
+
+        Data d = new Data();
+
+        d.name = "Programiz";
+    }
+}
+
+class Data {
+    private String name;
+
+    public String getName() {
+        return this.name;
+    }
+    public void setName(String name) {
+        this.name= name;
+    }
+}
+
+public class Main {
+    public static void main(String[] main){
+        Data d = new Data();
+
+        // access the private variable using the getter and setter
+        d.setName("Programiz");
+        System.out.println(d.getName());
+    }
+}
+
+// Protected
+class Animal {
+    protected void display() {
+        System.out.println("I am an animal");
+    }
+}
+
+class Dog extends Animal {
+    public static void main(String[] args) {
+        Dog dog = new Dog();
+        dog.display();
+    }
+}
+
+//Public
+public class Animal {
+    public int legCount;
+    public void display() {
+        System.out.println("I am an animal.");
+        System.out.println("I have " + legCount + " legs.");
+    }
+}
+public class Main {
+    public static void main( String[] args ) {
+        Animal animal = new Animal();
+        animal.legCount = 4;
+        animal.display();
+    }
+}
+

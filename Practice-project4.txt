@@ -1,0 +1,15 @@
+class Company {
+  String name;
+
+  public Company() {
+    name = "XYZ";
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+
+    Company obj = new Company();
+    System.out.println("Company name = " + obj.name);
+  }
+}

@@ -1,0 +1,23 @@
+//Implicit
+public class Main {
+  public static void main(String[] args) {
+    int num = 9;
+    float num1 = num; 
+
+    System.out.println(num);     
+    System.out.println(num1);   
+  }
+}
+
+//Explicit
+
+public class Main {
+  public static void main(String[] args) {
+float x=45.5;
+int y=(int) x;
+
+ System.out.println(x);     
+    System.out.println(y);   
+  }
+}
+

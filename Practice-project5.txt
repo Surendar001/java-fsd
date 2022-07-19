@@ -1,0 +1,54 @@
+// List
+import java.util.*;
+class Arraylistassisted {
+    public static void main(String args[])
+    {
+        ArrayList<String> list = new ArrayList<String>();
+        list.add("Apple");
+        list.add("Orange");
+        list.add("Mango");
+        list.add("Grapes");
+ 
+        Iterator itr = list.iterator();
+        while (itr.hasNext()) {
+            System.out.println(itr.next());
+        }
+    }
+}
+
+// Linked List
+import java.util.*;
+public class Linkedlistassisted {
+
+    public static void main(String args[])
+    {
+        LinkedList<String> al = new LinkedList<String>();
+
+        al.add("Apple");
+        al.add("Orange");
+        al.add("Mango");
+        al.add("Grapes");
+
+        Iterator<String> itr = al.iterator();
+ 
+        while (itr.hasNext()) {
+
+            System.out.println(itr.next());
+        }
+    }
+}
+// Hashset
+import java.util.*;
+class Hashsetassisted {
+    public static void main(String args[])
+{
+	       HashSet<Integer> set=new HashSet<Integer>();  
+	       set.add(101);  
+	       set.add(103);  
+	       set.add(102);
+	       set.add(104);
+	       System.out.println(set);
+}
+}
+
+

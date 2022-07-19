@@ -1,0 +1,8 @@
+public class arrayAssisted {
+
+public static void main(String[] args) {
+
+String a[]= {"Mango", "Apple", "Guava", "Grapes", "Pine"};
+for(int i=0;i<5;i++) {
+System.out.println("Elements of array a: "+a[i]);
+}
